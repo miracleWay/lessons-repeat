@@ -1,0 +1,104 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+body {
+    position: relative;
+}
+
+.block1 {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    margin-left: 500px;
+    padding-top: 50px;
+}
+.block1:hover .block2 {
+    visibility: visible;
+}
+.block2 {
+    width: 50px;
+    height: 200px;
+    background-color: aquamarine;
+    visibility: hidden;
+    padding-top: 200px;
+}
+.block2:hover .block3 {
+    visibility: visible;
+}
+.block3 {
+    height: 50px;
+    width: 1000px;
+    background-color: aquamarine;
+    visibility: hidden;
+    padding-left: 1000px;
+}
+.block3:hover .block4 {
+    visibility: visible;
+}
+.block4 {
+    width: 50px;
+    height: 300px;
+    background-color: aquamarine;
+    visibility: hidden;
+    padding-top: 300px;
+}
+.block4:hover .block5 {
+    visibility: visible;
+}
+.block5 {
+    height: 50px;
+    width: 1000px;
+    background-color: aquamarine;
+    margin-left: -950px;
+    visibility: hidden;
+}
+.block5:hover .block6 {
+    visibility: visible;
+}
+.block6 {
+    width: 50px;
+    height: 50px;
+    background-color: aquamarine;
+    margin-left: -50px;
+    visibility: hidden;
+}
+.block6:hover .block7 {
+    visibility: visible;
+}
+.block7 {
+    width: 20px;
+    height: 100px;
+    background-color: aquamarine;
+    visibility: hidden;
+    padding-top: 100px;
+}
+.block7:hover .block8 {
+    visibility: visible;
+}
+.block8 {
+    width: 10px;
+    height: 100px;
+    background-color: aquamarine;
+    visibility: hidden;
+    padding-top: 100px;
+}
+.block8:hover .block9 {
+    visibility: visible;
+}
+.block9 {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    visibility: hidden;
+}
+.block9:hover .demon {
+    visibility: visible;
+}
+.demon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    visibility: hidden;
+}

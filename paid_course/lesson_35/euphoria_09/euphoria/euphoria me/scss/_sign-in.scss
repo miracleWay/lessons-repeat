@@ -1,0 +1,49 @@
+.page {
+    // .page__sign-in
+
+    &__sign-in {
+    }
+}
+.sign-in {
+    max-width: toRem(1440);
+    margin: 0 auto;
+    position: relative;
+    // .sign-in__container
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        &::before {
+            content: "";
+        }
+    }
+
+    // .sign-in__image
+
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    // .sign-in__body
+
+    &__body {
+        padding-left: toRem(77);
+        padding-top: toRem(60);
+    }
+
+    // .sign-in__title
+
+    &__title {
+        font-family: "CoreSans", sans-serif;
+        font-weight: 700;
+        font-size: toRem(34);
+        color: $darkColor;
+    }
+}

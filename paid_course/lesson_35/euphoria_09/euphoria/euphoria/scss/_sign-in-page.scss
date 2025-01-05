@@ -1,0 +1,35 @@
+.sign-in {
+	position: relative;
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	// .sign-in__container
+	&__container {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+	}
+	// .sign-in__image
+	&__image {
+		object-fit: cover;
+		width: 50%;
+		height: 100%;
+	}
+	// .sign-in__body
+	&__body {
+		transform: translate(0px, -100%);
+		flex: 0 0 50%;
+		padding-left: toRem(50);
+		padding-top: toRem(60);
+		padding-bottom: toRem(60);
+	}
+	// .sign-in__title
+	&__title {
+		@extend %CS;
+		color: #333333;
+		@include adaptiveValue("font-size", 34, 28);
+		font-weight: 700;
+		&:not(:last-child) {
+			margin-bottom: toRem(30);
+		}
+	}
+}

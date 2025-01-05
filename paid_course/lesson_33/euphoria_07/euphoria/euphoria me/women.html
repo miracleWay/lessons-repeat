@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<title>Women</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<img src="img/header/logo.svg" alt="" class="header__logo">
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="#" class="menu__link">Shop</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Men</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link menu__link--active">Women</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Combos</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Joggers</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<form action="#" class="header__form form-header" enctype="multipart/form-data">
+					<input type="text" class="form-header__input" placeholder="Search">
+					<button class="form-header__button _icon-search"></button>
+				</form>
+				<div class="header__action action-header">
+					<a href="#" class="action-header__item _icon-favourite"></a>
+					<a href="#" class="action-header__item _icon-profile"></a>
+					<a href="#" class="action-header__item _icon-cart"></a>
+				</div>
+				<button class="icon-menu"><span></span></button>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__clothing clothing">
+				<div class="clothing__container">
+					<aside class="clothing__filter filter">
+						<h4 data-spoller="open" class="filter__title title-filter">
+							<button type="button"
+								class="title-filter__button title-filter__button--main _icon-filter">Filter</button>
+						</h4>
+						<form class="filter__form form-filter" action="#">
+							<div class="form-filter__section clothes-section">
+								<div class="clothes-section__items">
+									<label class="clothes-section__item _icon-ch-right">
+										<input type="checkbox" name="clothes[]" class="clothes-section__input">
+										Tops
+									</label>
+									<label class="clothes-section__item _icon-ch-right">
+										<input type="checkbox" name="clothes[]" class="clothes-section__input">
+										Printed T-shirts
+									</label>
+									<label class="clothes-section__item _icon-ch-right">
+										<input type="checkbox" name="clothes[]" class="clothes-section__input">
+										Plain T-shirts
+									</label>
+									<label class="clothes-section__item _icon-ch-right">
+										<input type="checkbox" name="clothes[]" class="clothes-section__input">
+										Kurti
+									</label>
+									<label class="clothes-section__item _icon-ch-right">
+										<input type="checkbox" name="clothes[]" class="clothes-section__input">
+										Boxers
+									</label>
+									<label class="clothes-section__item _icon-ch-right">
+										<input type="checkbox" name="clothes[]" class="clothes-section__input">
+										Full sleeve T-shirts
+									</label>
+									<label class="clothes-section__item _icon-ch-right">
+										<input type="checkbox" name="clothes[]" class="clothes-section__input">
+										Joggers
+									</label>
+									<label class="clothes-section__item _icon-ch-right">
+										<input type="checkbox" name="clothes[]" class="clothes-section__input">
+										Payjamas
+									</label>
+									<label class="clothes-section__item _icon-ch-right">
+										<input type="checkbox" name="clothes[]" class="clothes-section__input">
+										Jeans
+									</label>
+								</div>
+							</div>
+							<div class="form-filter__section price-section">
+								<h5 data-spoller="open" class="price-section__title title-filter">
+									<button type="button" class="title-filter__button _icon-ch-up">Price</button>
+								</h5>
+								<div class="price-section__body">
+									<div class="price-section__range"></div>
+									<div class="price-section__inputs">
+										<input type="text" name="price-from"
+											class="price-section__input price-section__input--from">
+										<input type="text" name="price-to"
+											class="price-section__input price-section__input--to">
+									</div>
+								</div>
+							</div>
+							<div class="form-filter__section color-section">
+								<h5 data-spoller="open" class="color-section__title title-filter">
+									<button type="button" class="title-filter__button _icon-ch-up">Colors</button>
+								</h5>
+								<div class="color-section__body">
+									<div class="color-section__items">
+										<label class="color-section__item" style="--color:#8434E1">
+											<input type="checkbox" name="color[]" class="color-section__input">
+											Purple
+										</label>
+										<label class="color-section__item" style="--color:#252525">
+											<input type="checkbox" name="color[]" class="color-section__input">
+											Black
+										</label>
+										<label class="color-section__item" style="--color:#F35528">
+											<input type="checkbox" name="color[]" class="color-section__input">
+											Red
+										</label>
+										<label class="color-section__item" style="--color:#F16F2B">
+											<input type="checkbox" name="color[]" class="color-section__input">
+											Orange
+										</label>
+										<label class="color-section__item" style="--color:#345EFF">
+											<input type="checkbox" name="color[]" class="color-section__input">
+											Navy
+										</label>
+										<label class="color-section__item color-section__item--border"
+											style="--color:#FFFFFF">
+											<input type="checkbox" name="color[]" class="color-section__input">
+											White
+										</label>
+										<label class="color-section__item" style="--color:#D67E3B">
+											<input type="checkbox" name="color[]" class="color-section__input">
+											Broom
+										</label>
+										<label class="color-section__item" style="--color:#48BC4E">
+											<input type="checkbox" name="color[]" class="color-section__input">
+											Green
+										</label>
+										<label class="color-section__item" style="--color:#FDC761">
+											<input type="checkbox" name="color[]" class="color-section__input">
+											Yellow
+										</label>
+										<label class="color-section__item" style="--color:#E4E5E8">
+											<input type="checkbox" name="color[]" class="color-section__input">
+											Grey
+										</label>
+										<label class="color-section__item" style="--color:#E08D9D">
+											<input type="checkbox" name="color[]" class="color-section__input">
+											Pink
+										</label>
+										<label class="color-section__item" style="--color:#3FDEFF">
+											<input type="checkbox" name="color[]" class="color-section__input">
+											Blue
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-filter__section size-section">
+								<h5 data-spoller="open" class="size-section__title title-filter">
+									<button type="button" class="title-filter__button _icon-ch-up">Size</button>
+								</h5>
+								<div class="size-section__body">
+									<div class="size-section__items">
+										<label class="size-section__item">
+											<input type="checkbox" name="size[]" class="size-section__input">
+											XXS
+										</label>
+										<label class="size-section__item">
+											<input type="checkbox" name="size[]" class="size-section__input">
+											XL
+										</label>
+										<label class="size-section__item">
+											<input type="checkbox" name="size[]" class="size-section__input">
+											XS
+										</label>
+										<label class="size-section__item">
+											<input type="checkbox" name="size[]" class="size-section__input">
+											S
+										</label>
+										<label class="size-section__item">
+											<input type="checkbox" name="size[]" class="size-section__input">
+											M
+										</label>
+										<label class="size-section__item">
+											<input type="checkbox" name="size[]" class="size-section__input">
+											L
+										</label>
+										<label class="size-section__item">
+											<input type="checkbox" name="size[]" class="size-section__input">
+											XXL
+										</label>
+										<label class="size-section__item">
+											<input type="checkbox" name="size[]" class="size-section__input">
+											3XL
+										</label>
+										<label class="size-section__item">
+											<input type="checkbox" name="size[]" class="size-section__input">
+											4XL
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-filter__section style-section">
+								<h5 data-spoller="open" class="style-section__title title-filter">
+									<button type="button" class="title-filter__button _icon-ch-up">Dress Style</button>
+								</h5>
+								<div class="style-section__body">
+									<div class="style-section__items">
+										<label class="style-section__item _icon-ch-right">
+											<input type="checkbox" name="style[]" class="style-section__input">
+											Classic
+										</label>
+										<label class="style-section__item _icon-ch-right">
+											<input type="checkbox" name="style[]" class="style-section__input">
+											Casual
+										</label>
+										<label class="style-section__item _icon-ch-right">
+											<input type="checkbox" name="style[]" class="style-section__input">
+											Business
+										</label>
+										<label class="style-section__item _icon-ch-right">
+											<input type="checkbox" name="style[]" class="style-section__input">
+											Sport
+										</label>
+										<label class="style-section__item _icon-ch-right">
+											<input type="checkbox" name="style[]" class="style-section__input">
+											Elegant
+										</label>
+										<label class="style-section__item _icon-ch-right">
+											<input type="checkbox" name="style[]" class="style-section__input">
+											Formal (evening)
+										</label>
+									</div>
+								</div>
+							</div>
+						</form>
+					</aside>
+					<div class="clothing__products products">
+						<div class="products__header">
+							<h1 class="products__title">Women’s Clothing</h1>
+							<div class="products__categories">
+								<button type="button" class="products__category products__category--active">New</button>
+								<button type="button" class="products__category">Recommended</button>
+							</div>
+						</div>
+						<div class="products__carts">
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__nav nav-footer">
+					<div class="nav-footer__block">
+						<h5 class="nav-footer__title">Need Help</h5>
+						<ul class="nav-footer__list">
+							<li class="nav-footer__item">
+								<a href="#" class="nav-footer__link">Contact Us</a>
+							</li>
+							<li class="nav-footer__item">
+								<a href="#" class="nav-footer__link">Track Order</a>
+							</li>
+							<li class="nav-footer__item">
+								<a href="#" class="nav-footer__link">Returns & Refunds</a>
+							</li>
+							<li class="nav-footer__item">
+								<a href="#" class="nav-footer__link">FAQ's</a>
+							</li>
+							<li class="nav-footer__item">
+								<a href="#" class="nav-footer__link">Career</a>
+							</li>
+						</ul>
+					</div>
+					<div class="nav-footer__block">
+						<h5 class="nav-footer__title">Company</h5>
+						<ul class="nav-footer__list">
+							<li class="nav-footer__item">
+								<a href="#" class="nav-footer__link">About Us</a>
+							</li>
+							<li class="nav-footer__item">
+								<a href="#" class="nav-footer__link">euphoria Blog</a>
+							</li>
+							<li class="nav-footer__item">
+								<a href="#" class="nav-footer__link">euphoriastan</a>
+							</li>
+							<li class="nav-footer__item">
+								<a href="#" class="nav-footer__link">Collaboration</a>
+							</li>
+							<li class="nav-footer__item">
+								<a href="#" class="nav-footer__link">Media</a>
+							</li>
+						</ul>
+					</div>
+					<div class="nav-footer__block">
+						<h5 class="nav-footer__title">More Info</h5>
+						<ul class="nav-footer__list">
+							<li class="nav-footer__item">
+								<a href="#" class="nav-footer__link">Term and Conditions</a>
+							</li>
+							<li class="nav-footer__item">
+								<a href="#" class="nav-footer__link">Privacy Policy</a>
+							</li>
+							<li class="nav-footer__item">
+								<a href="#" class="nav-footer__link">Shipping Policy</a>
+							</li>
+							<li class="nav-footer__item">
+								<a href="#" class="nav-footer__link">Sitemap</a>
+							</li>
+						</ul>
+					</div>
+					<div class="nav-footer__block">
+						<h5 class="nav-footer__title">Location</h5>
+						<ul class="nav-footer__list">
+							<li class="nav-footer__item">
+								<a href="mailto:support@euphoria.in" class="nav-footer__link">support@euphoria.in</a>
+							</li>
+							<li class="nav-footer__item">
+								<a href="#" class="nav-footer__link">Eklingpura Chouraha,
+									Ahmedabad Main Road</a>
+							</li>
+							<li class="nav-footer__item">
+								<a href="#" class="nav-footer__link">(NH 8- Near Mahadev Hotel)
+									Udaipur, India- 313002</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__contacts contacts-footer">
+					<div class="contacts-footer__social social-footer">
+						<a href="#" class="social-footer__item _icon-s-fb"></a>
+						<a href="#" class="social-footer__item _icon-s-inst"></a>
+						<a href="#" class="social-footer__item _icon-s-x"></a>
+						<a href="#" class="social-footer__item _icon-s-linkedin"></a>
+					</div>
+					<div class="contacts-footer__apps apps-footer">
+						<h5 class="apps-footer__title">Download The App</h5>
+						<div class="apps-footer__block">
+							<a href="#" class="apps-footer__item">
+								<img src="img/footer/google-play.svg" alt="Download app in Google Play Market">
+							</a>
+							<a href="#" class="apps-footer__item">
+								<img src="img/footer/app-store.svg" alt="Download app in App Store">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__faq faq-footer">
+					<div class="faq-footer__box">
+						<h5 data-spoller class="faq-footer__title">
+							<button class="faq-footer__button-title _icon-ch-down">Popular Categories</button>
+						</h5>
+						<div class="faq-footer__body">
+							<ul class="faq-footer__list">
+								<li class="faq-footer__item">
+									<a href="#" class="faq-footer__link">Contact Us</a>
+								</li>
+								<li class="faq-footer__item">
+									<a href="#" class="faq-footer__link">Track Order</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer__copy">Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</div>
+			</div>
+		</footer>
+	</div>
+	<!-- Підключення noUiSlider -->
+	<script src="js/nouislider.js"></script>
+	<!-- Підключення wNumb -->
+	<script src="js/wNumb.min.js"></script>
+	<!-- Підключення JS-файлу з кодом -->
+	<script src="js/script.js"></script>
+</body>
+
+</html>

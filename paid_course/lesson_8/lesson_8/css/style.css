@@ -1,0 +1,243 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+
+body {
+    padding-top: 50px;
+}
+.care {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: #7D7D7D;
+    max-width: 703px;
+    margin: 0 auto;
+    padding: 0 15px;
+    margin-bottom: 100px;
+}
+.care-header {
+    max-width: 413px;   
+    margin-bottom: 20px;
+}
+.care-square {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #40DDB6;
+    margin-right: 6px;
+}
+.care-subtitle {
+    display: inline-block;
+    font-weight: 500;
+    color: #37393F;
+    margin-bottom: 16px;
+}
+.care-title {
+    text-transform: capitalize;
+    color: #37393F;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.21;
+}
+.care-text {
+    line-height: 1.46;
+    margin-bottom: 20px;
+}
+.care-text p {
+    margin-bottom: 15px;
+}
+.care-list {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    color: #37393F;
+    margin-bottom: 43px;
+}
+.care-item {
+    margin-bottom: 23px;
+    background: url(../img/vector.png) 0 0 / 27px no-repeat;
+    padding-left: 35px;
+    line-height: 1.4;
+}
+.care-icons {
+    font-size: 0;
+    margin-bottom: 37px;
+}
+.icon-item {
+    display: inline-block;
+    max-width: 295px;
+    border: 1px solid #E3E3E3;
+    padding: 32px 32px 32px 90px;
+    background: url(../img/experience-icon.png) 31px 31px / 39px no-repeat;
+}
+.icon-item:not(:last-child) {
+    margin-right: 21px;
+}
+.icon-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #37393F; 
+    margin-bottom: 3px;
+}
+.icon-text {
+    font-size: 16px;
+    line-height: 1.35;
+}
+.care-btn {
+    color: #FFFFFF;
+    background-color: #6B77E5;
+    text-transform: capitalize;
+    padding: 21px 27px;
+    display: inline-block;
+}
+
+
+
+.discover {
+    max-width: 1250px;
+    padding: 0 15px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 100px;
+}
+.discover-header {
+    text-align: center;
+    max-width: 852px;
+    margin: 0 auto;
+    margin-bottom: 47px;
+}
+.discover-square {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #40DDB6;
+    margin-right: 6px;
+}
+.discover-subtitle {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 14px;
+    color: #37393F;
+}
+.discover-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.21;
+    margin-bottom: 14px;
+    color: #37393F;
+}
+.discover-text {
+    font-size: 18px;
+    line-height: 1.46;
+    color: #7D7D7D;
+}
+.discover-row {
+    font-size: 0;
+    margin-bottom: 58px;
+}
+.discover-card {
+    display: inline-block;
+    max-width: 384px;
+    font-size: 0;
+}
+.discover-card:not(:last-child) {
+    margin-right: 34px;
+}
+.discover-img1,
+.discover-img2,
+.discover-img3,
+.discover-img4,
+.discover-img5,
+.discover-img6 {
+    width: 384px;
+    height: 501px;
+    margin-bottom: 24px;
+}
+.discover-img1 {
+    background: url(../img/computer.png) 0 0 / contain no-repeat;
+}
+.discover-img2 {
+    background: url(../img/man.png) 0 0 / contain no-repeat;
+}
+.discover-img3 {
+    background: url(../img/phone.png) 0 0 / contain no-repeat;
+}
+.discover-img4 {
+    background: url(../img/woman.png) 0 0 / contain no-repeat;
+}
+.discover-img5 {
+    background: url(../img/graphic.png) 0 0 / contain no-repeat;
+}
+.discover-img6 {
+    background: url(../img/cup.png) 0 0 / contain no-repeat;
+}
+.discover-desc {
+    background: url(../img/date.png) 0 bottom / 22px no-repeat;
+}
+.discover-name {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.27;
+    color: #37393F;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.discover-date {
+    font-size: 14px;
+    color: #7D7D7D;
+    line-height: 1.46;
+    margin-left: 25px;
+}
+
+.fashion {
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0 15px;
+    font-size: 0;
+}
+.left-block {
+    display: inline-block;
+    width: 50%;
+    padding: 183px 74px 174px 74px;
+    background: url(../img/back-left.png) 0 0 / cover no-repeat;
+    height: 640px;
+
+}
+.fashion-desc {
+}
+.fashion-title {
+    font-family: "CoreSansC", sans-serif;
+    font-weight: 800;
+    font-size: 34px;
+    color: #FFFFFF;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.fashion-text {
+    font-family: "Causten", sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-bottom: 50px;
+    line-height: 1.4;
+}
+.fashion-link {
+    font-family: "Causten";
+    font-weight: 600;
+    color: #3C4242;
+    font-size: 18px;
+    padding: 12px 44px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+.right-block {
+    display: inline-block;
+    width: 50%;
+    height: 640px;
+    background: url(../img/back-right.png) 0 0 / cover no-repeat;
+    vertical-align: bottom;
+}

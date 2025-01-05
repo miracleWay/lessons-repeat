@@ -1,0 +1,225 @@
+// Бібліотека математичних функцій
+@use "sass:math";
+// Обнулення стилів
+@import "_reset.scss";
+// Шрифти
+@import "_fonts.scss";
+// Компоненти
+@import "_common.scss";
+// Функції
+@import "_functions.scss";
+
+$mainColor: #3c4242;
+$pc: toEm(1199.98);
+$tablet: toEm(990.98);
+$bigMobile: toEm(767.98);
+$mediumMobile: toEm(479.98);
+$smallMobile: toEm(320);
+
+%subtitle {
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-size: toRem(18);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    column-gap: toRem(7);
+}
+%subtitle-before {
+    content: "";
+    width: toRem(11);
+    height: toRem(11);
+    flex: 0 0 toRem(11);
+    background-color: #40ddb6;
+}
+@mixin action-title(
+    $titleColor: #2a2f2f,
+    $titleSize: 17.875px,
+    $titleWeight: 700,
+    $titleLH: 27.93px,
+    $titleLS: -0.715px
+) {
+    color: $titleColor;
+    font-size: $titleSize;
+    font-weight: $titleWeight;
+    line-height: $titleLH;
+    letter-spacing: $titleLS;
+}
+
+.featured {
+    background-color: #3c4242;
+    display: grid;
+    grid-template-columns: toRem(15) 1fr minmax(auto, toRem(1240)) 1fr toRem(15);
+    color: #fff;
+
+    // .featured__content
+
+    &__content {
+        grid-column: 1 / 6;
+        @media (min-width: toEm(768)) {
+            grid-column: 3 / 6;
+            column-gap: toRem(35);
+            display: flex;
+        }
+    }
+
+    // .featured__body
+
+    &__body {
+        flex-basis: toRem(600);
+        padding-block: toRem(100);
+
+        @media (max-width: toEm(991.98)) {
+            padding-block: toRem(50);
+        }
+    }
+
+    // .featured__title
+
+    &__title {
+        font-weight: 500;
+        font-size: toRem(25);
+        margin-bottom: toRem(60);
+    }
+
+    // .featured__items
+
+    &__items {
+        display: grid;
+        gap: toRem(40);
+        @media (min-width: toEm(768)) {
+            max-width: toRem(500);
+        }
+    }
+
+    // .featured__item
+
+    &__item {
+    }
+
+    // .featured__destinations
+
+    &__destinations {
+    }
+}
+.item-featured {
+    display: flex;
+    gap: toRem(30);
+    align-items: flex-start;
+
+    // .item-featured__link
+
+    &__link {
+        aspect-ratio: 1 / 1;
+        flex-basis: toRem(180);
+        overflow: hidden;
+        border-radius: toRem(3);
+    }
+
+    // .item-featured__image
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.3s;
+        @media (any-hover: hover) {
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    // .item-featured__body
+
+    &__body {
+        display: grid;
+        gap: toRem(15);
+
+        @media (min-width: toEm(768)) {
+            flex-basis: toRem(287);
+        }
+    }
+
+    // .item-featured__label
+
+    &__label {
+    }
+
+    // .item-featured__title
+
+    &__title {
+        font-weight: 500;
+        line-height: 1.5;
+        font-size: toRem(16);
+    }
+
+    // .item-featured__link-title
+
+    &__link-title {
+        @media (any-hover: hover) {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    // .item-featured__text
+
+    &__text {
+        line-height: 1.6;
+        font-size: toRem(12);
+    }
+}
+.destinations-featured {
+    padding: toRem(35);
+    flex-grow: 1;
+    flex-basis: toRem(705);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    // .destinations-featured__content
+
+    &__content {
+        flex-basis: toRem(395);
+        position: relative;
+        z-index: 2;
+    }
+
+    // .destinations-featured__title
+
+    &__title {
+        font-weight: 700;
+        font-size: toRem(25);
+        line-height: 1.6;
+        &:not(:last-child) {
+            margin-bottom: toRem(15);
+        }
+    }
+
+    // .destinations-featured__link-title
+
+    &__link-title {
+    }
+
+    // .destinations-featured__text
+
+    &__text {
+        line-height: 1.6;
+    }
+
+    // .destinations-featured__img
+
+    &__img {
+        opacity: 0.4;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center right;
+    }
+}

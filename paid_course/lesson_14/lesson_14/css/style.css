@@ -1,0 +1,198 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+body {
+    overflow: hidden;
+    font-family: "Lobster";
+
+}
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    background: url(../img/main-img/forest-2.jpg) 0 0 / 100% 100% no-repeat;
+}
+
+main {
+    position: relative;
+}
+
+.soldier {
+    transform: translate(50px, 700px);
+}
+.soldier-2 {
+    transform: translate(100px, 400px);
+}
+.soldier-3 {
+    transform: translate(150px, 100px);
+}
+.head {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+}
+.body {
+    width: 30px;
+    height: 70px;
+    background-color: black;
+}
+.left-arm {
+    width: 10px;
+    height: 50px;
+    background-color: black;
+    transform: rotate(35deg) translate(-50px, -50px);
+}
+.right-arm {
+    width: 10px;
+    height: 50px;
+    background-color: black;
+    transform: translate(30px, -122px) rotate(-35deg);
+}
+.left-foot {
+    width: 10px;
+    height: 50px;
+    background-color: black;
+    transform: translate(-7px, -110px) rotate(30deg);
+}
+.right-foot {
+    width: 10px;
+    height: 50px;
+    background-color: black;
+    transform: translate(25px, -162px) rotate(-30deg);
+}
+.ru img {
+    width: 100px;
+    transform: translate(50px, -250px);
+}
+
+.ukr {
+    position: absolute;
+    top: 70%;
+    left: 100%;
+}
+.ukr img {
+    width: 400px;
+}
+.rocket {
+    position: absolute;
+    top: 65%;
+    left: 110%;
+    transform: rotate(-60deg);
+}
+.rocket img {
+    width: 100px;
+    height: 170px;
+}
+@keyframes soldier-1 {
+    0% {
+        transform: translate(-100px, 700px);
+    }
+    100% {
+        transform: translate(50px, 700px);
+    }
+}
+@keyframes soldier-2 {
+    0% {
+        transform: translate(-100px, 400px);
+    }
+    100% {
+        transform: translate(100px, 400px);
+    }
+}
+@keyframes soldier-3 {
+    0% {
+        transform: translate(-150px, 100px);
+    }
+    100% {
+        transform: translate(150px, 100px);
+    }
+}
+@keyframes flag {
+    0% {
+        transform: translate(-100px, -250px);
+    }
+    100% {
+        transform: translate(50px, -250px);
+    }
+}
+@keyframes himars {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: 75%;
+    }
+}
+@keyframes rocket {
+    0% {
+        left: 100%
+    }
+    100% {
+        left: 85%;
+    }
+}
+@keyframes launch {
+    0% {
+        left: 85%;
+    }
+    10% {
+        top: 55%;
+    }
+    20% {
+        top: 45%;
+    }
+    30% {
+        top: 35%;
+        transform: rotate(-80deg);
+    }
+    40% {
+        top: 25%;
+        transform: rotate(-90deg);
+    }
+    50% {
+        top: 20%;
+        transform: rotate(-100deg);
+    }
+    60% {
+        top: 25%;
+    }
+    70% {
+        top: 35%;
+        transform: rotate(-105deg);
+    }
+    80% {
+        top: 45%;
+        transform: rotate(-110deg);
+    }
+    90% {
+        top: 55%;
+        transform: rotate(-120deg);
+    }
+    100% {
+        transform: rotate(-130deg);
+        left: 5%;
+        top: 70%;
+    }
+}
+
+
+.soldier {
+    animation: soldier-1 1s;
+}
+.soldier-2 {
+    animation: soldier-2 1s;
+}
+.soldier-3 {
+    animation: soldier-3 1s;
+}
+.ru img {
+    animation: flag 1s;
+}
+.ukr {
+    animation: himars 1s ease 1s forwards;
+} 
+.rocket {
+    animation: rocket 1s ease 1.1s forwards,
+                launch 3s linear 2s forwards;
+}

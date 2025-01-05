@@ -1,0 +1,278 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cabin:regular,600&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  line-height: 1;
+  height: 100%;
+}
+
+address {
+  font-style: normal;
+}
+
+/* FORM */
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  color: inherit;
+  background-color: transparent;
+}
+
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Прибираємо стандартний маркер Chrome */
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Прибираємо стандартний маркер Firefox */
+details > summary {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/Causten-Light.woff2") format("woff2"), url("../fonts/Causten-Light.woff") format("woff");
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/Causten-Regular.woff2") format("woff2"), url("../fonts/Causten-Regular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/Causten-SemiBold.woff2") format("woff2"), url("../fonts/Causten-SemiBold.woff") format("woff");
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/Causten-Bold.woff2") format("woff2"), url("../fonts/Causten-Bold.woff") format("woff");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CoreSansC";
+  src: url("../fonts/CoreSansC-65Bold.woff2") format("woff2"), url("../fonts/CoreSansC-65Bold.woff") format("woff");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CoreSansC";
+  src: url("../fonts/CoreSansC-75ExtraBold.woff2") format("woff2"), url("../fonts/CoreSansC-75ExtraBold.woff") format("woff");
+  font-display: swap;
+  font-weight: 800;
+  font-style: normal;
+}
+.featured {
+  background-color: #3c4242;
+  display: grid;
+  grid-template-columns: 0.9375rem 1fr minmax(auto, 77.5rem) 1fr 0.9375rem;
+  color: #fff;
+}
+.featured__content {
+  grid-column: 1/6;
+}
+@media (min-width: 48em) {
+  .featured__content {
+    grid-column: 3/6;
+    -webkit-column-gap: 2.1875rem;
+       -moz-column-gap: 2.1875rem;
+            column-gap: 2.1875rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.featured__body {
+  -ms-flex-preferred-size: 37.5rem;
+      flex-basis: 37.5rem;
+  padding-block: 6.25rem;
+}
+@media (max-width: 61.99875em) {
+  .featured__body {
+    padding-block: 3.125rem;
+  }
+}
+.featured__title {
+  font-weight: 500;
+  font-size: 1.5625rem;
+  margin-bottom: 3.75rem;
+}
+.featured__items {
+  display: grid;
+  gap: 2.5rem;
+}
+@media (min-width: 48em) {
+  .featured__items {
+    max-width: 31.25rem;
+  }
+}
+.item-featured {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.875rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.item-featured__link {
+  aspect-ratio: 1/1;
+  -ms-flex-preferred-size: 11.25rem;
+      flex-basis: 11.25rem;
+  overflow: hidden;
+  border-radius: 0.1875rem;
+}
+.item-featured__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+@media (any-hover: hover) {
+  .item-featured__image:hover {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+.item-featured__body {
+  display: grid;
+  gap: 0.9375rem;
+}
+@media (min-width: 48em) {
+  .item-featured__body {
+    -ms-flex-preferred-size: 17.9375rem;
+        flex-basis: 17.9375rem;
+  }
+}
+.item-featured__title {
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+@media (any-hover: hover) {
+  .item-featured__link-title:hover {
+    text-decoration: underline;
+  }
+}
+.item-featured__text {
+  line-height: 1.6;
+  font-size: 0.75rem;
+}
+
+.destinations-featured {
+  padding: 2.1875rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 44.0625rem;
+      flex-basis: 44.0625rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.destinations-featured__content {
+  -ms-flex-preferred-size: 24.6875rem;
+      flex-basis: 24.6875rem;
+  position: relative;
+  z-index: 2;
+}
+.destinations-featured__title {
+  font-weight: 700;
+  font-size: 1.5625rem;
+  line-height: 1.6;
+}
+.destinations-featured__title:not(:last-child) {
+  margin-bottom: 0.9375rem;
+}
+.destinations-featured__text {
+  line-height: 1.6;
+}
+.destinations-featured__img {
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center right;
+     object-position: center right;
+}

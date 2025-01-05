@@ -1,0 +1,114 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+}
+
+
+.menu {
+    padding: 50px;
+    background-color: purple;
+    color: rgb(115, 111, 111);
+    font-size: 0;
+}
+.menu__item {
+    display: inline-block;
+    font-size: 20px;
+    position: relative;
+}
+.menu__item:not(:last-child) {
+    margin-right: 15px;
+}
+
+.menu__item:hover .sub-menu {
+    visibility: visible;
+}
+.menu__link {
+    padding: 15px 40px;
+    background-color: aqua;
+}
+.menu__link:hover {
+    background-color: rgb(32, 203, 203);
+}
+
+.sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    visibility: hidden;
+    padding-top: 15px;
+}
+.sub-menu__item {
+    position: relative;
+}
+.sub-menu__item:hover .third-lvl-menu{
+    visibility: visible;
+}
+.sub-menu__link {
+    padding: 15px 20px; 
+    background-color: rgb(208, 255, 0);
+}
+.sub-menu__link:hover {
+    background-color: rgb(169, 205, 7);
+}
+
+.third-lvl-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    visibility: hidden;
+    padding-left: 5px;
+}
+.third-lvl-menu__item {
+}
+.thir-lvl-menu__link {
+    padding: 15px 20px;
+    background-color: rgb(64, 1, 255);
+    color: white;
+    width: 200px;
+}
+.thir-lvl-menu__link:hover {
+    background-color: rgb(54, 6, 196);
+}
+
+
+main {
+    font-size: 0;
+    padding: 50px;
+}
+.block {
+    margin-bottom: 50px;
+}
+.side {
+    display: inline-block;
+    background-color: brown;
+    font-size: 20px;
+    width: 100px;
+    vertical-align: top;
+    position: sticky;
+    top: 100px;
+    left: 0;
+    margin-top: 200px;
+}
+.side__item {
+}
+.side__link {
+    padding: 15px;
+}
+.text {
+    display: inline-block;
+    background-color: aqua;
+    font-size: 20px;
+    width: 1600px;
+    padding: 50px;
+}
+.other {
+    font-size: 20px;
+    background-color: aqua;
+    font-size: 20px;
+    width: 1600px;
+    padding: 50px;
+}

@@ -1,0 +1,46 @@
+/* Шрифти */
+@import url(../css/fonts.css);
+/* Обнулення стилів */
+@import url(../css/reset.css);
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 0;
+    max-width: 1169px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.text {
+    display: inline-block;
+    margin-right: 38px;
+    max-width: 563px;
+}
+.text__subtitle {
+    font-size: 28px;
+    color: #D06B00;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+.text__title {
+    font-family: "DM Serif Text", serif;
+    line-height: 1.46;
+    font-size: 59px;
+    color: #0E333D;
+}
+.text__par {
+    line-height: 1.8;
+    font-size: 20px;
+    color: #474747;
+}
+.img {
+    display: inline-block;
+    vertical-align: top;
+}
+.img > img {
+    max-width: 273px;
+}
+
+.img > img:not(:last-child) {
+    margin-right: 22px;
+}
